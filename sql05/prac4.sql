@@ -1,0 +1,1 @@
+INSERT INTO ShohinJim VALUES ('0009', '印鑑', '専務用品', 95, 10, '2009-11-30');
