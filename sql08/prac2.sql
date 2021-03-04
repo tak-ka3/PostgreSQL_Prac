@@ -52,7 +52,7 @@ FROM Shohin
 GROUP BY CUBE(shohin_bunrui, torokubi);
 
 -- 今度は獲得したレコードの中から、任意の集約キーを用いたレコードだけを集める関数、GROUPING SETSWO使う
--- 今回は商品分類と登録日だけをを集約キーとして扱い、それぞれ合計を求める
+-- 今回は商品分類と登録日だけをを集約キーとして扱い、それぞれ合計を求めた
 SELECT CASE WHEN GROUPING(shohin_bunrui) = 1
   THEN '商品分類　合計'
   ELSE shohin_bunrui END AS shohin_bunrui,
